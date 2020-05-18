@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a62e594-e988-446f-b35e-fffdd40e62c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/holbertonschool-higher_level_programming.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/holbertonschool-higher_level_programming.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/0-square_matrix_simple.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/0-square_matrix_simple.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/1-search_replace.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/1-search_replace.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/10-best_score.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/10-best_score.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/100-weight_average.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/100-weight_average.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/101-square_matrix_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/101-square_matrix_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/102-complex_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/102-complex_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/11-mutiply_list_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/11-mutiply_list_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/2-uniq_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/2-uniq_add.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/3-common_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/3-common_elements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/4-only_diff_elements.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/4-only_diff_elements.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/5-number_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/5-number_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/6-print_sorted_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/6-print_sorted_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/7-update_dictionary.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/7-update_dictionary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/8-simple_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/8-simple_delete.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x04-python-more_data_structures/9-multiply_by_2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x04-python-more_data_structures/9-multiply_by_2.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1baZ7hhMRlStpYk3VCuzNFttZMI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a62e594-e988-446f-b35e-fffdd40e62c7" name="Default Changelist" comment="" />
+      <created>1588871998524</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588871998524</updated>
+      <workItem from="1588872003217" duration="4000" />
+    </task>
+    <servers />
+  </component>
+</project>
