@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""empty class Square
+"""
+
+
 class Square:
     """ Square Object """
     def __init__(self, size=0):

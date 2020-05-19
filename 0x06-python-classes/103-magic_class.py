@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import math
+"""empty class Square
+"""
 
 
 class MagicClass:

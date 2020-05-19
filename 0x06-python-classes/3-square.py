@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""empty class Square
+"""
+
+
 class Square:
+    """Defines an Object by size
+    """
     def __init__(self, size=0):
         if not isinstance(size, int):
             raise TypeError("size has to be an integer")
