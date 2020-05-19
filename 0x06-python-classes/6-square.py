@@ -7,18 +7,21 @@ class Square:
     """ Square Object
     """
     def __init__(self, size=0, position=(0, 0)):
-        """ Square Const """
+        """Square Const
+        """
         self.size = size
         self.position = position
 
     @property
     def size(self):
-        """ Get Square """
+        """Get Square
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ Set Square"""
+        """Set Square
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         if value < 0:
@@ -27,12 +30,14 @@ class Square:
 
     @property
     def position(self):
-        """ Get Position """
+        """Get Position
+        """
         return self.__position
 
     @position.setter
     def position(self, value):
-        """ Set Position"""
+        """Set Position
+        """
         if type(value) is not tuple or len(value) != 2 or \
            type(value[0]) is not int or value[0] < 0 or \
            type(value[1]) is not int or value[1] < 0:
@@ -41,11 +46,13 @@ class Square:
             self.__position = value
 
     def area(self):
-        """  the square """
+        """the square
+        """
         return self.__size ** 2
 
     def my_print(self):
-        """ Echo a # square"""
+        """Echo a # square
+        """
         if self.size == 0:
             print()
         else:
