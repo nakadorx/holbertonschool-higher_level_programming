@@ -4,9 +4,11 @@
 
 
 class Square:
-    """ Square Object """
+    """Square Object
+    """
     def __init__(self, size=0):
-        """ Square Const """
+        """Square Const
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
@@ -15,17 +17,20 @@ class Square:
             self.__size = size
 
     def area(self):
-        """ Get Square """
+        """Get Square
+        """
         return self.__size ** 2
 
     @property
     def size(self):
-        """ Get Size """
+        """Get Size
+        """
         return self.__size
 
     @size.setter
     def size(self, value):
-        """ Set Size """
+        """Set Size
+        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -34,7 +39,8 @@ class Square:
             self.__size = value
 
     def my_print(self):
-        """ Echo Square """
+        """Echo Square
+        """
         if not self.__size:
             print()
         else:
