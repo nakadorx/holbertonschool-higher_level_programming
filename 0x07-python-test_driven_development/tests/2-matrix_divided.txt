@@ -1,0 +1,47 @@
+>>> matr = __import__("2-matrix_divided").matrix_divided
+>>> matr([[5, 2, 2], [1, 6, 8]], 2)
+[[2.5, 1.0, 1.0], [0.5, 3.0, 4.0]]
+>>> matr([[1.2, 5.0, 3], [4.9, 6.7, 6]], 1.5)
+[[0.8, 3.33, 2.0], [3.27, 4.47, 4.0]]
+>>> try:
+...     matr([[]], 564)
+... except Exception as e:
+...     print(e)
+...
+matrix must be a matrix (list of lists) of integers/floats
+>>> try:
+...     matr(None, 2)
+... except Exception as e:
+...     print(e)
+...
+matrix must be a matrix (list of lists) of integers/floats
+>>> try:
+...     matr([1, 4], 2)
+... except Exception as e:
+...     print(e)
+...
+matrix must be a matrix (list of lists) of integers/floats
+>>> try:
+...     matr("test", 2)
+... except Exception as e:
+...     print(e)
+...
+matrix must be a matrix (list of lists) of integers/floats
+>>> try:
+...     matr([[1, 2,"5"],[1, 1, 1]], 2)
+... except Exception as e:
+...     print(e)
+...
+matrix must be a matrix (list of lists) of integers/floats
+>>> try:
+...     matr([[1, 2], [1, 2]], 0)
+... except Exception as e:
+...     print(e)
+...
+division by zero
+>>> try:
+...     matr([[1, 2], [1, 2]], "546")
+... except Exception as e:
+...     print(e)
+...
+div must be a number

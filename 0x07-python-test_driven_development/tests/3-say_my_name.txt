@@ -1,0 +1,23 @@
+>>> s = __import__("3-say_my_name").say_my_name
+>>> s("tohami", "wil ben 8anja")
+My name is tohami wil ben 8anja
+>>> s("monsif")
+My name is monsif
+>>> try:
+...     s(none)
+... except Exception as e:
+...     print(e)
+...
+name 'none' is not defined
+>>> try:
+...     s(7, "el 7aya")
+... except Exception as e:
+...     print(e)
+...
+first_name must be a string
+>>> try:
+...     s("el 7aya", 7)
+... except Exception as e:
+...     print(e)
+...
+last_name must be a string

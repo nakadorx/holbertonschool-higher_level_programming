@@ -1,0 +1,36 @@
+>>> ti = __import__('5-text_indentation').text_indentation
+>>> ti("wa mo7sin")
+wa mo7sin
+>>> ti("wa tohami?")
+wa tohami?
+
+>>> ti("wa tohami? winik: twa7achnak yarajil?")
+wa tohami?
+
+winik:
+
+twa7achnak yarajil?
+
+>>> ti("wa tohami? winik twa7achnak yarajil?")
+wa tohami?
+
+winik twa7achnak yarajil?
+
+>>> try:
+...     ti(["wamostfa", "ahla mo7sin"])
+... except Exception as e:
+...     print(e)
+...
+text must be a string
+>>> try:
+...     ti(None)
+... except Exception as e:
+...     print(e)
+...
+text must be a string
+>>> try:
+...     ti(1849)
+... except Exception as e:
+...     print(e)
+...
+text must be a string
