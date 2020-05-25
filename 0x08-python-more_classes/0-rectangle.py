@@ -1,12 +1,11 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 """
-rectangel calss
+class Rectangle
 """
 
 
 class Rectangle:
-    """
-    void calss
-    """
+    """ constractor default """
+
     def __init__(self):
         pass
