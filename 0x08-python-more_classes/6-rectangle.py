@@ -7,7 +7,7 @@ calss making for rectangle
 class Rectangle:
     """ rectangle class """
 
-    number_of_instances = None
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """ cosntractor """
@@ -54,7 +54,7 @@ class Rectangle:
         return self.__width * self.__height
 
     def __str__(self):
-        """ str """
+        """ fefez """
         x = ""
         if self.__height == 0 or self.__width == 0 :
             return x
