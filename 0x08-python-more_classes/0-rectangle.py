@@ -8,4 +8,5 @@ class Rectangle:
     """
     void calss
     """
-    pass
+    def __init__(self):
+        pass
