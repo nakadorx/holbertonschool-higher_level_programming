@@ -3,7 +3,11 @@
 
 
 class Student:
-    """holbertontask"""
+    """holbertontask
+	    Attributes:
+        first_name (str): holberton
+        last_name (str): holberton
+        age (int): holberton"""
 
     def __init__(self, first_name, last_name, age):
         """holberton"""
