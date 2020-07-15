@@ -12,10 +12,8 @@ class Student:
 		self.age = age
 
     def to_json(self, attrs=None):
-        dictionary = {}
-        if type(attrs) is list:
-            for i in attrs:
-                if hasattr(self, i):
-                    dictionary[i] = self.__dict__[i]
-            return dictionary
+		"""holberton"""
+        if type(attrs) is list and all([type(x) == str for x in attrs]):
+            return {key: value for key, value in self.__dict__.items() if key in attrs}
         return self.__dict__
+
