@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-"""holbertontask"""
+"""Student module"""
 
 
 class Student:
-    """holbertontask
-	
-	ls"""
+    """Student class
+    """
 
     def __init__(self, first_name, last_name, age):
-        """holberton"""
+        """Initailazer"""
         self.first_name = first_name
         self.last_name = last_name
-		self.age = age
+        self.age = age
 
     def to_json(self):
-        """holbertontask"""
+        """Returns the json """
         return self.__dict__
