@@ -4,10 +4,8 @@
 
 class Student:
     """holbertontask
-	    Attributes:
-        first_name (str): holberton
-        last_name (str): holberton
-        age (int): holberton"""
+	
+	ls"""
 
     def __init__(self, first_name, last_name, age):
         """holberton"""
