@@ -6,15 +6,15 @@ def pascal_triangle(n):
     """holbertontask"""
     if n <= 0:
         return []
-    result = []
-    last = []
+    res = []
+    lt = []
     for i in range(n):
-        row = []
+        x = []
         for j in range(i + 1):
-            if i == 0 or j == 0 or i == j:
-                row.append(1)
+            if j == 0 or i == 0 or j == i:
+                x.append(1)
             else:
-                row.append(last[j] + last[j - 1])
-        last = row
-        result.append(row)
-    return result
+                x.append(lt[j] + lt[j - 1])
+        lt = x
+        res.append(x)
+    return res

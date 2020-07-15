@@ -5,5 +5,5 @@
 def read_file(filename=""):
     """holbertontask"""
     with open(filename, encoding="UTF-8") as f:
-        string = f.read()
-        print(string, end="")
+        str = f.read()
+        print(str, end="")

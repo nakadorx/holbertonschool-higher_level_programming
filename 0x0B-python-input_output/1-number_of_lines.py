@@ -5,8 +5,8 @@
 def number_of_lines(filename=""):
     """holbertontask"""
     with open(filename, encoding="utf-8") as f:
-        number = 0
+        x = 0
         for line in f:
-            number += 1
+            x += 1
 
-    return number
+    return x
