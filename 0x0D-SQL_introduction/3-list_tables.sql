@@ -1,0 +1,2 @@
+--  holberton task
+SHOW TABLES;
