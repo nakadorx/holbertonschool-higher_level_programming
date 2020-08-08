@@ -22,4 +22,3 @@ def mainx():
 
 if __name__ == '__main__':
     mainx()
-
