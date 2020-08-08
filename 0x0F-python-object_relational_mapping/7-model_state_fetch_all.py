@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" a script that lists all State objects from the database hbtn_0e_6_usa """
+""" connetion """
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine, asc
 from sqlalchemy.orm import sessionmaker
 
 
-def main(argv):
+def mainx(argv):
     """ main function """
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
                             argv[1], argv[2], argv[3]), pool_pre_ping=True)
@@ -18,5 +18,5 @@ def main(argv):
     session.close()
 
 
-if __name__ == '__main__' and len(sys.argv) == 4:
-    main(sys.argv)
+if __name__ == '__main__':
+    mainx()
