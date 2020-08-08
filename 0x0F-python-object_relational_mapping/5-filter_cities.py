@@ -1,35 +1,38 @@
 #!/usr/bin/python3
 """
-accepts 4 arguments (mysql username, password, database name and a given state)
-and lists all cities from that database that belong to the given state
-+ injection free!
+ con
 """
-import sys
 import MySQLdb
+import sys
 
 
-def main(argv):
-    """
-    connects to a given mysql database and lists all 'cities' of a given state
-    """
-    conn = MySQLdb.connect(host="localhost", port=3306,
-                           user=argv[1], passwd=argv[2], db=argv[3])
-    cur = conn.cursor()
-    cur.execute("SELECT cities.name FROM cities LEFT JOIN states\
-            ON cities.state_id = states.id\
-            WHERE states.name = %s", (argv[4], ))
+def mainx():
+    """con"""
+
+    db = MySQLdb.connect(host='localhost',
+                         port=3306,
+                         user=sys.argv[1],
+                         passwd=sys.argv[2],
+                         db=sys.argv[3]
+                         )
+    cur = db.cursor()
+    cur.execute("SELECT cities.name\
+                FROM cities\
+                INNER JOIN states\
+                ON cities.state_id = states.id\
+                WHERE states.name = %(state_name)s\
+                ORDER BY cities.id ASC",
+                {'state_name': sys.argv[4]}
+                )
     rows = cur.fetchall()
-    i = 0
+    lst = []
     for row in rows:
-        if i != 0:
-            print(", ", end="")
-        i += 1
-        print(row[0], end="")
-    print()
+        for col in row:
+            lst.append(col)
+    print(', '.join(lst))
     cur.close()
-    conn.close()
+    db.close()
 
 
-if __name__ == '__main__':
-    if len(sys.argv) == 5:
-        main(sys.argv)
+if __name__ == "__main__":
+    mainx()
