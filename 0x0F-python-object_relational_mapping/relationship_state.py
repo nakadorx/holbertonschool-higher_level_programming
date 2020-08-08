@@ -4,7 +4,7 @@ con
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
-from relationship_city import bs, City
+from relationship_city import Base, City
 
 class State(Base):
     """ con"""
