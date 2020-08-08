@@ -7,19 +7,19 @@ from sqlalchemy import create_engine, asc
 from sqlalchemy.orm import sessionmaker
 
 
-def main(argv):
+def mainx():
     """ main function """
-    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
-                            argv[1], argv[2], argv[3]), pool_pre_ping=True)
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
+        sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    new = State(name='Louisiana')
-    session.add(new)
+    newS = State(name='Louisiana')
+    session.add(newS)
     session.commit()
-    print(new.id)
+    print(newS.id)
     session.close()
 
 
-if __name__ == '__main__' and len(sys.argv) == 4:
-    main(sys.argv)
+if __name__ == '__main__':
+    mainx()
