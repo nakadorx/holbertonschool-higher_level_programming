@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" connetion """
+""" cont """
 import sys
 from model_state import Base, State
 from sqlalchemy import create_engine, asc

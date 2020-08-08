@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Sconneciton
+"""cont
 """
 import sys
 from model_state import Base, State
