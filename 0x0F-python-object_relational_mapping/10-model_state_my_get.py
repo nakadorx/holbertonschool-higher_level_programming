@@ -15,8 +15,8 @@ def mainx():
     Session = sessionmaker(bind=engine)
     session = Session()
     try:
-        instance = session.query(State).filter(State.name == sys.argv[4]).one()
-        print(str(instance.id))
+        isnt = session.query(State).filter(State.name == sys.argv[4]).one()
+        print(str(isnt.id))
     except:
         print("Not found")
     session.close()
