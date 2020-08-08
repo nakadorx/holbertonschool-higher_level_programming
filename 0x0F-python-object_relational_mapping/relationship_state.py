@@ -4,9 +4,9 @@ con
 """
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.orm import relationship
-from relationship_city import Base, City
+from relationship_city import bs, City
 
-class State(Base):
+class State(bs):
     """ con"""
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True, unique=True, autoincrement=True, nullable=False)
