@@ -1,23 +1,33 @@
 #!/usr/bin/python3
 """
-cons
+ con
 """
-import sys
 import MySQLdb
+import sys
 
 
-if __name__ == '__main__':
-	if len(sys.argv) == 5:
-		""" fzerfzer """
-		con = MySQLdb.connect(host="localhost", port=3306, user=argv[1], passwd=argv[2], db=argv[3])
-		cur = con.cursor()
-		arg = MySQLdb.escape_string(argv[4]).decode()
-		cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}%'\
-					ORDER BY id ASC".format(arg))
-		query_rows = cur.fetchall()
+def mainx():
+    """con"""
 
-		for row in query_rows:
-			print(row)
-		pass
-		cur.close()
-		con.close()
+    db = MySQLdb.connect(host='localhost',
+                         port=3306,
+                         user=sys.argv[1],
+                         passwd=sys.argv[2],
+                         db=sys.argv[3]
+                         )
+    cur = db.cursor()
+    cur.execute("SELECT *\
+                FROM states\
+                WHERE name = %(searched_name)s\
+                ORDER BY id ASC",
+                {'searched_name': sys.argv[4]}
+                )
+    rows = cur.fetchall()
+    for row in rows:
+        print(row)
+    cur.close()
+    db.close()
+
+
+if __name__ == "__main__":
+    mainx()
