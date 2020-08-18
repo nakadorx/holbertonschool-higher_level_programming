@@ -1,3 +1,3 @@
 #!/bin/bash
 # cont
-curl -s -L -X GET "$1"
+curl -sL "$1"
