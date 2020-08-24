@@ -3,8 +3,8 @@
 import urllib.request
 
 
-req = urllib.request.Request('https://intranet.hbtn.io/status')
-with urllib.request.urlopen(req) as response:
+reqq = urllib.request.Request('https://intranet.hbtn.io/status')
+with urllib.request.urlopen(reqq) as response:
     print("Body response:")
     html = response.read()
     print("\t- type:", type(html))
