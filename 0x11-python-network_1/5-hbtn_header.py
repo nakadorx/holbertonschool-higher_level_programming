@@ -4,9 +4,7 @@
 import requests
 import sys
 
-
-try:
-    reqq = requests.get(sys.argv[1])
-    print(reqq.headers['X-Request-Id'])
-except:
-    pass
+if __name__ == '__main__':
+    url = sys.argv[1]
+    req = requests.get(url)
+    print(req.headers.get("X-Request-Id"))

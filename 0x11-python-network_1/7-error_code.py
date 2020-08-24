@@ -5,9 +5,10 @@ holb
 import requests
 import sys
 
-
-reqq = requests.get(sys.argv[1])
-if reqq.status_code >= 400:
-    print("Error code:", reqq.status_code)
-else:
-    print(reqq.text)
+if __name__ == '__main__':
+    url = sys.argv[1]
+    reqq = requests.get(url)
+    if reqq.status_code >= 400:
+        print("Error code: {}".format(reqq.status_code))
+    else:
+        print(reqq.text)
