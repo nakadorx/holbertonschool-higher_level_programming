@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const S = require('./5-square');
 class Square extends S {
   charPrint (c) {
