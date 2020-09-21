@@ -1,5 +1,5 @@
-const Sq = require('./5-square');
-class Square extends Sq {
+const S = require('./5-square');
+class Square extends S {
   charPrint (c) {
     if (!c) {
       c = 'X';
